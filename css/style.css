@@ -1,0 +1,197 @@
+/*Estrutura so site*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFF url(../imagens/bg.png);
+    margin: 15px;
+}
+
+#container {
+    background: #ede9cc url(../imagens/bg-container.png) top center repeat-y;/*repetir na vertical*/
+    margin: 0 auto;
+    min-width: 740px; /* largura minima*/
+    max-width: 1180px;/*evita destorcer o texto*/
+}
+#topo { 
+    position: relative;/*definir posição topo*/
+    background: #dbcd87;
+    height: 15.4em;
+    min-height: 250px; /*altura minima topo*/
+}
+
+#area-logo {
+    position: absolute;/*definir posição area-logo*/
+    background: url(../imagens/logogimp2.png) no-repeat;
+    width: 100%;/*largura fixa*/
+    height: 250px;
+    top: 0; /*logo fica colado no canto*/
+    left: 0;  /*logo fica colado no canto a esquerda*/
+    z-index: 1;
+}
+.logo a {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3;/*ficara acima de todos*/
+    background: url(../imagens/logogimp.gif)no-repeat;
+    width: 151;
+    height: 66;
+    text-indent: -9000px;
+
+
+}
+
+#area-menu {
+    position: absolute;/*definir posição area-menu*/
+    top: 0; /*logo fica colado no canto*/
+    right: 0;  /*logo fica colado no canto a direita*/
+    background: url(../imagens/topo-imagem-lateral.png) no-repeat;
+    width: 450px;/*largura fixa*/
+    height: 250px;
+    z-index: 2;
+}
+
+#conteudo-menu {
+    margin-left: 90px ;/*vai 90 px para a direita*/
+    margin-right: 15px; /*vai ficar 15px da direita*/
+    padding-top: 15px; 
+}
+#menu-linguagens {
+    border-bottom:  1px solid #b5ab56;
+    border-top: 1px solid #b5ab56;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.7em;
+    color: #8b8448;
+}
+#menu-linguagens .linguagens {
+    float: left;
+    line-height: 2.1em;/*centralizar conteudo*/
+   
+}
+a{
+    text-decoration: none;
+}
+a.acessar {
+    text-transform: uppercase;
+    background: #a29750;
+    color: #fff5b0;
+    padding: 5px 10px;
+    float: right;
+}
+
+/*Barra de navegação vertical*/
+#menu{
+    margin-top: 15px;
+}
+ul {
+    list-style: none;
+
+}
+ul#navegacao {
+    float: left;
+}
+ul#navegacao a{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 5px;
+    color: #6e672c;
+    line-height: 30px;/*espaco entre link*/
+}
+
+ul#navegacao a:hover{
+   background: #fdf6be;
+}
+.gif {
+    float: right;
+}
+
+/*area de contedudo*/
+
+/*como quero layout liquido vou usar a medidas em porcentagem*/
+#area-principal {
+   
+    float: left;
+    width: 50%;
+    background: url(../imagens/bg-area-principal.png) top left repeat-x;
+    padding: 15px 0px;
+}
+
+#area-lateral {
+   
+    float: right;
+    width: 50%;
+    background: url(../imagens/bg-area-lateral.png) top left repeat-x;
+    padding: 20px 0px;
+
+    
+}
+.conteudo {
+    margin: 0 auto;
+    width: 90%;
+
+   
+    
+}
+#rodape {
+    clear: both;/*remover estado flutuante*/
+    padding: 16px;
+    background: #fff url(../imagens/bg-rodape.png) repeat-x top;/*repetir na horizontal apartir do topo*/
+    color: #7d7640;
+
+    
+}
+
+/* formatações de textos */
+h2 {
+    color: #7d7640;
+    font-size: 1.2em;
+    padding: 5px 0px;
+}
+
+p {
+    
+    margin-top: 5px;
+    margin-bottom: 10px;/*margin entre paragrafos*/
+    text-align: justify;
+}
+
+/*formatações da area-lateral*/
+
+#programar li {
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb;
+    height: 10em;
+
+    
+}
+
+#programar li a img{
+    float: left;
+    margin-right: 8px;
+   
+
+}
+
+#programar li a p{
+    color: #000;
+    font-size: 0.8em;
+   
+
+}
+#programar li a h3{
+    font-size: 1em;
+    color: #615b2d;
+    padding: 5px;
+    background: url(../imagens/ornamento.png) no-repeat right;
+   
+
+}
+#programar li:hover {
+    background: #f6f3d6;
+    cursor: pointer;
+}
+
